@@ -1,0 +1,20 @@
+#animatedBanner { width:300px; height: 600px; background: #000 url(img/background.jpg); margin:10vh auto; }
+    #back { position: absolute; height: 0px; margin-top: 600px; width: 300px; background: url(img/back.png) no-repeat center; animation: backUp 1s ease 1s 1 forwards; }
+    #front { position: absolute; height: 490px; width: 300px; margin-top: 80px; background: url(img/front.png) no-repeat center; }
+    #logo { position: absolute; height: 169px; background: url(img/logo.png) no-repeat; width: 183px; margin-left: 115px; animation: logoLeft 1s ease 1s 1 forwards; }
+    #text { position: absolute; height: 159px; width: 230px; background: url(img/text.png) no-repeat; animation: textFade 1s ease 1s 1 forwards; }
+
+    @keyframes backUp {
+        0% { height: 0px; margin-top: 600px; }
+        100% { height: 600px; margin-top: 0px; }
+    }
+
+    @keyframes textFade {
+        0% { opacity: 100; }
+        100% { opacity: 0; }
+    }
+
+    @keyframes logoLeft {
+        0% { margin-left: 115px; }
+        100% { margin-left: -50px; }
+    }
